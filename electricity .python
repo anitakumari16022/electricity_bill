@@ -1,0 +1,68 @@
+A=int(input("enter a number:"))
+B=int(input("enter a number:"))
+C=int(input("enter a number:"))
+if A>B:
+  if A>C:
+    Print(A,"A is greater")
+  else:
+    print(C,"C is greater")
+else:
+  if B>C:
+    print(B"B is greater")
+  else:
+    print(C,"C is greater")
+     
+enter a number:5
+enter a number:7
+enter a number:9
+9 C is greater
+
+#electricity bill
+A=int(input("enter a the unit:"))
+fc=300
+rate=3
+if(A>=0 and A<=100):
+    total_bill=A*3+fc
+    print(total_bill,"is the total bill")
+elif(A>=100 and A<=500):
+     rate=4
+     total_bill=A*4+fc
+     print(total_bill,"is the total bill")
+elif(A>=500):
+     rate=5
+     total_bill = A * 5 + fc
+     print(total_bill, "is the total bill")
+      if(total_bill>=3000):
+        totalbill = total_bill - 0.1 * total_bill
+        print(totalbill, "is the total bill")
+else:
+  print("invalid")
+
+     
+  File "<ipython-input-46-7c871729d351>", line 16
+    if(total_bill>=3000):
+    ^
+IndentationError: unexpected indent
+
+#electricity bill
+A=int(input("enter a the unit:"))
+fc=300
+rate=3
+if(A>=0 and A<=100):
+    total_bill=A*3+fc
+    print(total_bill,"is the total bill")
+elif(A>=100 and A<=500):
+     rate=4
+     total_bill=A*4+fc
+     print(total_bill,"is the total bill")
+elif(A>=500):
+     rate=5
+     total_bill = A * 5 + fc
+     print(total_bill, "is the total bill")
+     # This elif block should be indented at the same level as the others
+     if(total_bill>=3000):
+         totalbill = total_bill - 0.1 * total_bill
+         print("but with sunsidie it is:",totalbill)
+else:
+  print("invalid")
+     
